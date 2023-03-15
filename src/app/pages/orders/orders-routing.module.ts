@@ -3,7 +3,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { OrderListComponent } from './order-list/order-list.component';
 
 const routes: Routes = [
-  { path: '', component: OrderListComponent }
+  { path: '', redirectTo: 'order-list', pathMatch: 'full' },
+  { path: 'order-list', component: OrderListComponent }
 ];
 
 @NgModule({
